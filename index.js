@@ -14,6 +14,6 @@ getbutton.addEventListener('click',() => {
 		return response.json();
 	})
 	.then(data => {
-		showplace.textContent = data.current.temp_c + " C" + data.current.condition.text
+		showplace.textContent = data.current.temp_c + " °C " + data.current.condition.text
 	})
 })
